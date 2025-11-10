@@ -13,7 +13,7 @@ products.map((el)=>{
                             <h3 class="text-[20px] font-bold line-through">$55</h3>
                         </div>
                         <h2 class="text-[orangered] text-[20px] font-bold " >${el.name}</h2>
-                        <p class="mt-[5px]">${el.description}</p>
+                        <p class="mt-[5px] line-clamp-[2]">${el.description}</p>
                         <div class="flex items-center gap-[3px]">
                             <img width="25px" src="./general/star-full.svg" alt="">
                             <img width="25px" src="./general/star-full.svg" alt="">
@@ -52,4 +52,3 @@ products.map((el)=>{
     
 //                     `
 //  })
-

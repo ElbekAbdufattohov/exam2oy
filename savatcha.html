@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-[#FBF8EC]">
+    <header class=" bg-[white] fixed top-0 left-0 w-full  z-50 transition-transform duration-700 border-gray-200">
+        <div class="container mx-auto px-5 py-2 overflow-hidden">
+            <div class="flex items-center justify-between flex-wrap gap-3">
+                <div class="flex items-center gap-3 shrink-0">
+                    <img src="./general/smile.svg" alt="logo" class="w-8 h-8">
+                    <img src="./general/Северяночка.svg" alt="logo text" class="h-5 max-w-[100px] w-full">
+                </div>
+                <div id="togglBtn"
+                    class="bg-[green] flex items-center justify-center gap-2 hover:bg-[#70C05B]  text-white rounded-md cursor-pointer w-[140px] h-[40px] hover:bg-[#5da64d] transition shrink-0">
+                    <img src="./general/menu.svg" alt="menu icon" class="w-4 h-4">
+                    <h4 class="text-[16px]">Каталог</h4>
+                </div>
+                <div class="bg-[white] rounded-md relative hidden sm:block flex-grow max-w-[380px]">
+                    <input type="text" placeholder="Найти товар"
+                        class="w-full border border-[#70C05B] rounded-md pl-4 pr-10 py-2 focus:outline-none focus:ring-2 focus:ring-[#70C05B]">
+                    <img src="./general/search.jpg" alt="search" class="absolute right-3 top-2.5 w-5 h-5">
+                </div>
+                <div
+                    class="hidden sm:flex flex-col items-center text-gray-600 hover:text-[#70C05B] cursor-pointer shrink-0">
+                    <img src="./general/Frame 211.svg" alt="like" class="w-6 h-6 mb-1">
+                    <h4 class="text-sm">Избранное</h4>
+                </div>
+                <div
+                    class="hidden lg:flex flex-col items-center text-gray-700 hover:text-[#70C05B] cursor-pointer shrink-0">
+                    <img src="./general/4burchak.svg" alt="kub" class="w-6 h-6 mb-1">
+                    <h4 class="text-sm">продукты</h4>
+                </div>
+                <div
+                    class="hidden md:flex flex-col items-center text-gray-700 hover:text-[#70C05B] cursor-pointer relative shrink-0">
+                    <img src="./general/telajka.svg" alt="basket" class="w-6 h-6 mb-1">
+                    <h4 class="text-sm">Корзина</h4>
+                    <span class="absolute -top-1 right-3 bg-red-500 text-white text-xs px-1.5 rounded-full">1</span>
+                </div>
+                <div class="hidden lg:block md:none items-center justify-between gap-[2px] cursor-pointer shrink-0">
+                    <img src="./general/avatar.svg" alt="avatar" class="w-8 h-8 rounded-full">
+                    <h3 class="text-sm font-medium">Алексей</h3>
+                    <img src="./general/pasga.svg" alt="down" class="w-4 h-4">
+                </div>
+            </div>
+        </div>
+    </header>
+    <header>
+        <div class="container max-w-[1440px] [0px] pt-[10px] mb-[0px] ml-auto mr-auto ">
+            <div class="wrapper">
+                <div class="flex gap-[20px] ml-[110px] pt-[20px] items-center">
+                    <button class="font-normal text-[12px] text-[#414141] duration-800 hover:text-[#70C05B]"><a
+                            href="./index.html">Главная</a></button>
+                    <img src="./img/chevron-right.svg" alt="">
+                    <p class="text-[#8F8F8F] text-[12px] font-normal">Корзина</p>
+                </div>
+                <p class="text-[#414141] text-[64px] ml-[100px] pt-[30px] font-bold">Корзина</p>
+                <div class="flex items-center mt-[50px] gap-[40px]">
+                    <div class="flex items-center ml-[110px] gap-[10px]">
+                        <button
+                            class="w-[24px] h-[24px] bg-[white] hover:bg-[#70C05B] hover:border-[#70C05B] duration-800 ease-in-out rounded-sm border-solid border-x border-y outline-none border-[#BFBFBF] flex justify-center items-center"><img
+                                src="./ikkinchi_img/minus.svg" alt=""></button>
+                        <p class="text-[#606060] text-[12px] font-normal">Выделить всё</p>
+                    </div>
+                    <p class="text-[#FF6633] text-[12px] font-normal">Удалить выбранные</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <header>
+        <div class="container max-w-[1440px] [0px] pt-[10px] mb-[0px] ml-auto mr-auto ">
+            <div class="wrapper flex justify-between items-center">
+                <div class="otasi max-w-[880px] ml-[100px] mt-[20px] flex flex-wrap gap-[20px]">
+                    <div
+                        class="bola flex justify-between relative w-[876px]  h-[72px] bg-[#FFFFFF] shadow-xl shadow-[#0000001A0] duration-800 hover:shadow-xl hover:shadow-[#FF663333] ">
+                        <div
+                            class="absolute top-[-8px] left-[10px] w-[24px] h-[24px] bg-[white] hover:bg-[#70C05B] hover:border-[#70C05B] duration-800 ease-in-out rounded-sm border-solid border-x border-y outline-none border-[#BFBFBF] flex justify-center items-center">
+                            <img src="" alt="">
+                        </div>
+                        <div class="flex items-center gap-[10px]">
+                            <img class="mb-[8px] ml-[-2px]" src="./general/dorblu.svg" alt="">
+                            <div class="">
+                                <p class="text-[16px] text-[#414141] font-normal">Комбайн K3C-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»
+                                </p>
+                                <div class="text-[12px] flex items-center gap-[10px]">
+                                    <p class="text-[#414141] font-bold">44,50 ₽</p>
+                                    <p class="text-[#606060] font-normal">за шт.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-[50px]">
+                            <div class="flex items-center justify-evenly bg-[#70C05B] w-[100px] h-[40px] rounded-sm ">
+                                <button class="w-[24px] h-[24px] flex items-center justify-center"><img
+                                        src="./ikkinchi_img/minus.svg" alt=""></button>
+                                <button class=" text-[white] text-[16px] font-normal w-[24px] h-[24px]">2</button>
+                                <button class="flex justify-center items-center w-[24px] h-[24px] "><img
+                                        src="./ikkinchi_img/plus.svg" alt=""></button>
+                            </div>
+                            <p class="text-[18px] text-[#414141] mb-[30px] mr-[5px] font-bold">89,00 ₽</p>
+                        </div>
+                    </div>
+                    <div
+                        class="bola flex justify-between relative w-[876px]  h-[90px] bg-[#FFFFFF] shadow-xl shadow-[#0000001A0] duration-800 hover:shadow-xl hover:shadow-[#FF663333] ">
+                        <div
+                            class="absolute top-[-8px] left-[10px] w-[24px] h-[24px] bg-[white] hover:bg-[#70C05B] hover:border-[#70C05B] duration-800 ease-in-out rounded-sm border-solid border-x border-y outline-none border-[#BFBFBF] flex justify-center items-center">
+                            <img src="" alt="">
+                        </div>
+                        <div class="flex items-center gap-[10px]">
+                            <img class="mb-[25px] ml-[-2px]" src="./general/dorblu.svg" alt="">
+                            <div class="">
+                                <p class="text-[16px] text-[#414141] font-normal">Комбайн K3C-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»
+                                </p>
+                                <div class="text-[12px] flex items-center   gap-[10px]">
+                                    <div class="flex flex-col">
+                                        <p class="text-[#414141] font-bold">44,50 ₽</p>
+                                        <p class="text-[12px] text-[#BFBFBF] font-normal">C картой</p>
+                                    </div>
+
+                                    <div class="flex flex-col">
+                                        <p class="text-[12px] text-[#606060] ml-[10px] font-normal">50,50 ₽</p>
+                                        <p class="text-[12px] text-[#BFBFBF] font-normal">Обычная</p>
+
+                                    </div>
+                                    <div class="flex gap-[10px]">
+                                        <p class="text-[#606060] font-normal">за шт.</p>
+                                        <div
+                                            class="bg-[#FF6633] text-[white] text-[16px] font-normal flex justify-center items-center w-[53px] h-[32px] rounded-sm">
+                                            -10%</div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-[50px]">
+                            <div class="flex items-center justify-evenly bg-[#70C05B] w-[100px] h-[40px] rounded-sm ">
+                                <button class="w-[24px] h-[24px] flex items-center justify-center"><img
+                                        src="./ikkinchi_img/minus.svg" alt=""></button>
+                                <button class=" text-[white] text-[16px] font-normal w-[24px] h-[24px]">2</button>
+                                <button class="flex justify-center items-center w-[24px] h-[24px] "><img src=""
+                                        alt=""></button>
+                            </div>
+                            <div class="mb-[30px] ">
+                                <p class="text-[18px] text-[#414141] mr-[5px] font-bold">80,10 ₽</p>
+                                <p
+                                    class="text-[16px] text-[#8F8F8F] ml-[8px] line-through decoration-[#8F8F8F] decoration-[0.5px]  font-normal">
+                                    89,00 ₽</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="bola flex justify-between relative w-[876px]  h-[72px] bg-[#FFFFFF] shadow-xl shadow-[#0000001A0] duration-800 hover:shadow-xl hover:shadow-[#FF663333] ">
+                        <div
+                            class="absolute top-[-8px] left-[10px] w-[24px] h-[24px] bg-[white] hover:bg-[#70C05B] hover:border-[#70C05B] duration-800 ease-in-out rounded-sm border-solid border-x border-y outline-none border-[#BFBFBF] flex justify-center items-center">
+                            <img src="" alt="">
+                        </div>
+                        <div class="flex items-center gap-[10px]">
+                            <img class="mb-[8px] ml-[-2px]" src="./general/dorblu.svg" alt="">
+                            <div class="">
+                                <p class="text-[16px] text-[#414141] font-normal">Комбайн K3C-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»
+                                </p>
+                                <div class="text-[12px] flex items-center gap-[10px]">
+                                    <p class="text-[#414141] font-bold">44,50 ₽</p>
+                                    <p class="text-[#606060] font-normal">за шт.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-[50px]">
+                            <div class="flex items-center justify-evenly bg-[#70C05B] w-[100px] h-[40px] rounded-sm ">
+                                <button class="w-[24px] h-[24px] flex items-center justify-center"><img
+                                        src="./ikkinchi_img/minus.svg" alt=""></button>
+                                <button class=" text-[white] text-[16px] font-normal w-[24px] h-[24px]">2</button>
+                                <button class="flex justify-center items-center w-[24px] h-[24px] "><img
+                                        src="./ikkinchi_img/plus.svg" alt=""></button>
+                            </div>
+                            <p class="text-[18px] text-[#414141] mb-[30px] mr-[5px] font-bold">89,00 ₽</p>
+                        </div>
+                    </div>
+                    <div
+                        class="bola flex justify-between relative w-[876px] opacity-50 h-[72px] bg-[#FFFFFF] shadow-xl shadow-[#0000001A0]  ">
+                        <div
+                            class="absolute top-[-8px] left-[10px] w-[24px] h-[24px] bg-[white]  rounded-sm border-solid border-x border-y outline-none border-[#BFBFBF] flex justify-center items-center">
+                            <img src="./ikkinchi_img/ptechka.svg" alt="">
+                        </div>
+                        <div class="flex items-center gap-[10px]">
+                            <img class="mb-[8px] ml-[-2px]" src="./general/dorblu.svg" alt="">
+                            <div class="">
+                                <p class="text-[16px] text-[#414141] font-normal">Комбайн K3C-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»
+                                </p>
+                                <div class="text-[12px] flex items-center gap-[10px]">
+                                    <p class="text-[#414141] font-bold">44,50 ₽</p>
+                                    <p class="text-[#606060] font-normal">за шт.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex mt-[10px] mr-[5px]">
+                            <p class="text-[16px] text-[#414141] font-normal">Нет в наличии</p>
+                        </div>
+                    </div>
+                    <label class="flex items-center cursor-pointer space-x-3">
+
+
+                </div>
+                <div class="ongtaraf mr-[100px] flex flex-col w-[272px] h-[420px] ">
+                    <div class="flex gap-[10px]  items-center">
+                        <label class="relative inline-block cursor-pointer">
+                            <input type="checkbox" class="sr-only peer" />
+
+                            <div class="w-12 h-6 bg-gray-300 rounded-full peer-checked:bg-[#70C05B] transition-colors">
+                            </div>
+
+                            <div
+                                class="absolute top-[2px] left-[2px] w-5 h-5 bg-white rounded-full shadow-sm transform peer-checked:translate-x-6 transition-transform">
+                            </div>
+                        </label>
+
+                        <p class="text-[#414141] text-[16px] font-normal">Списать 200 ₽ </p>
+                    </div>
+                    <p class="text-[16px] mt-[20px] text-[#8F8F8F] font-normal">Ha карте накоплено 200 ₽ </p>
+                    <img class="w-full mt-[25px] mb-[25px]" src="./ikkinchi_img/Rectangle 6255.svg" alt="">
+                    <div class="flex justify-between items-center">
+                        <p class="text-[#8F8F8F] text-[16px] font-normal">3 товара</p>
+                        <p class="text-[#414141] text-[16px] font-normal">258,10 ₽ </p>
+                    </div>
+                    <div class="flex justify-between mt-[10px] items-center">
+                        <p class="text-[16px] text-[#8F8F8F] font-normal">Скидка</p>
+                        <p class="text-[#FF6633] text-[16px] font-bold">-8,01 ₽</p>
+                    </div>
+                    <img class="w-full mt-[25px] mb-[25px]" src="./ikkinchi_img/Rectangle 6255.svg" alt="">
+                    <div class="flex justify-between items-center">
+                        <p class="text-[16px] text-[#8F8F8F] font-normal">Итог</p>
+                        <p class="text-[24px] text-[#414141] font-bold">250,09 ₽</p>
+                    </div>
+                    <div class="flex justify-center mt-[10px] items-center gap-[10px]">
+                        <img src="./ikkinchi_img/smile.svg" alt="">
+                        <p class="text-[10px] text-[#70C05B] font-normal">Вы получяете <span
+                                class="text-[12px] text-[#70C05B] font-bold"> 100 бонусов</span> </p>
+                    </div>
+                    <div class="flex justify-center mt-[25px]">
+                        <p
+                            class="w-[214px] h-[24px] rounded-sm bg-[#D80000] text-[12px] text-[white] font-normal flex justify-center items-center">
+                            Минимальная сумма заказа 1000p</p>
+                    </div>
+
+                    <button
+                        class="w-full mt-[10px] h-[60px] bg-[#FCD5BA] text-[#FF6633] text-[24px] font-normal flex justify-center cursor-pointer items-center rounded-sm">Оформить
+                        заказ</button>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <foter class=" mt-[120px] bg-[#F9F4E2] h-[156px]">
+        <div class="container max-w-[1440px] mt-[0px] mb-[0px] ml-auto mr-auto pt-[60px] ">
+            <div class="wrapper flex justify-evenly items-center flex-wrap">
+                <div class="flex items-center gap-[40px]">
+                    <img src="./general/logo.oxiri.svg" alt="">
+                    <ul class="flex gap-[30px] items-center text-[12px] text-[#414141] font-normal">
+                        <li>
+                            <a href="">O компании</a>
+                        </li>
+                        <li>
+                            <a href="">Контакты</a>
+                        </li>
+                        <li>
+                            <a href="">Вакансии</a>
+                        </li>
+                        <li>
+                            <a href="">Статьи</a>
+                        </li>
+                        <li>
+                            <a href="">Политика обработки персональных данных</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="flex gap-[20px]">
+                        <ul class="flex flex-wrap items-center justify-center gap-3 text-gray-700">
+                    <li>
+                        <a href="https://www.instagram.com/elbek19_/" target="_blank">
+                            <img src="./general/instagram.svg" alt="instagram" class="w-5 h-5">
+                        </a>
+                    </li>
+                    <li><a href="/"><img src="./general/w.svg" alt="vk" class="w-5 h-5"></a></li>
+                    <li>
+                        <a href="https://facebook.com/@elbek Abdufattohov"></a>
+                        <a href="/"><img src="./general/facebook.svg" alt="facebook" class="w-5 h-5"></a>
+                    </li>
+                    <li><a href="/"><img src="./general/ok.svg" alt="ok" class="w-5 h-5"></a></li>
+                </ul>
+                    </div>
+                </div>
+                <div class="flex flex-col mt-[20px] gap-[20px]">
+                    <div class="flex items-center gap-[10px]">
+                        <img src="./general/phone.svg" alt="phone">
+                        <a href="tel:+998935444770" class="text-[#414141] text-sm hover:text-[#70C05B] text-[16px] font-bold">+99893 544 47 70</a>
+
+                    </div>
+                    <div class="flex flex-wrap items-center justify-end gap-2 pb-[20px] mt-4 font-bold">
+                        <p class="text-xs text-gray-500 text-[16px]">Дизайн</p>
+                        <img src="./general/logo-zasovskiy-small-black.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </foter>
+
+    <!-- <foter class="bg-[#FFF6D9] py-6 border-t border-gray-200">
+        <div class="container mx-auto px-5">
+            <div class="flex flex-wrap items-center justify-between gap-6">
+                <div class="flex items-center gap-2 shrink-0">
+                    <img src="./general/logo.oxiri.svg" alt="logo" class="w-10 h-10">
+                </div>
+                <ul class="flex flex-wrap justify-center items-center gap-4 text-gray-700 text-sm font-medium">
+                    <li><a href="/" class="hover:text-[#70C05B]">O компании</a></li>
+                    <li><a href="/" class="hover:text-[#70C05B]">Контакты</a></li>
+                    <li><a href="/" class="hover:text-[#70C05B]">Вакансии</a></li>
+                    <li><a href="/" class="hover:text-[#70C05B]">Статьи</a></li>
+                    <li><a href="/" class="hover:text-[#70C05B]">Политика обработки персональных данных</a></li>
+                </ul>
+
+                <ul class="flex flex-wrap items-center justify-center gap-3 text-gray-700">
+                    <li>
+                        <a href="https://www.instagram.com/elbek19_/" target="_blank">
+                            <img src="./general/instagram.svg" alt="instagram" class="w-5 h-5">
+                        </a>
+                    </li>
+                    <li><a href="/"><img src="./general/w.svg" alt="vk" class="w-5 h-5"></a></li>
+                    <li>
+                        <a href="https://facebook.com/@elbek Abdufattohov"></a>
+                        <a href="/"><img src="./general/facebook.svg" alt="facebook" class="w-5 h-5"></a>
+                    </li>
+                    <li><a href="/"><img src="./general/ok.svg" alt="ok" class="w-5 h-5"></a></li>
+                    <li class="flex items-center gap-2">
+                        <img src="./general/phone.svg" alt="phone" class="w-5 h-5">
+                        <a href="tel:+998935444770" class="text-sm hover:text-[#70C05B] font-bold">+998 93 544 47 70</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="flex flex-wrap items-center justify-end gap-2 mt-4">
+                <p class="text-xs text-gray-500">Дизайн</p>
+                <img src="./general/logo-zasovskiy-small-black.svg" alt="zasovskiy logo" class="h-4">
+            </div>
+        </div>
+    </foter> -->
+</body>
+
+</html>

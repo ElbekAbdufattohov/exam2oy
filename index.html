@@ -10,8 +10,16 @@
 </head>
 
 <body class="bg-gray-100">
+        <header>
+        <div
+            class="container max-w-full bg-[white]  bg-cover bg-center mt-[70px] mb-[0px] ml-auto mr-auto">
+            <div class="wrapper flex justify-center gap-[10px] items-center">
+                <img class="w-full" src="./general/header2.svg" alt="">
+            </div>
+        </div>
+    </header>
     <main>
-        <header class=" bg-[white] border-gray-200">
+        <header class=" bg-[white] fixed top-0 left-0 w-full  z-50 transition-transform duration-700 border-gray-200">
         <div class="container mx-auto px-5 py-2 overflow-hidden">
             <div class="flex items-center justify-between flex-wrap gap-3">
                 <div class="flex items-center gap-3 shrink-0">
@@ -21,12 +29,16 @@
                 <div id="togglBtn"
                     class="bg-[green] flex items-center justify-center gap-2 hover:bg-[#70C05B]  text-white rounded-md cursor-pointer w-[140px] h-[40px] hover:bg-[#5da64d] transition shrink-0">
                     <img src="./general/menu.svg" alt="menu icon" class="w-4 h-4">
-                    <h4 class="text-[16px]">Каталог</h4>
+                    <a href="./katalog.html" class="text-[16px]">Каталог</a>
                 </div>
-                <div class="bg-[white] rounded-md relative hidden sm:block flex-grow max-w-[380px]">
-                    <input type="text" placeholder="Найти товар"
+                <div class="search-cards bg-[white] hidden overflow-y-scroll rounded-md relative hidden sm:block flex-grow max-w-[380px]">
+                    <input
+                    id="input"
+                     type="text" placeholder="Найти товар"
                         class="w-full border border-[#70C05B] rounded-md pl-4 pr-10 py-2 focus:outline-none focus:ring-2 focus:ring-[#70C05B]">
                     <img src="./general/search.jpg" alt="search" class="absolute right-3 top-2.5 w-5 h-5">
+                    <div class="search-cards w-full max-h-[300px] absolute top-[80px]">
+                    </div>
                 </div>
                 <div
                     class="hidden sm:flex flex-col items-center text-gray-600 hover:text-[#70C05B] cursor-pointer shrink-0">
@@ -42,7 +54,7 @@
                     class="hidden md:flex flex-col items-center text-gray-700 hover:text-[#70C05B] cursor-pointer relative shrink-0">
                     <img src="./general/telajka.svg" alt="basket" class="w-6 h-6 mb-1">
                     <h4 class="text-sm">Корзина</h4>
-                    <span class="absolute -top-1 right-3 bg-red-500 text-white text-xs px-1.5 rounded-full">1</span>
+                    <span class="absolute -top-1 right-3 bg-red-500 text-white text-xs px-1.5 rounded-full">0</span>
                 </div>
                 <div class="hidden lg:block md:none items-center justify-between gap-[2px] cursor-pointer shrink-0">
                     <img src="./general/avatar.svg" alt="avatar" class="w-8 h-8 rounded-full">
@@ -60,27 +72,143 @@
             </div>
         </section>
     </main>
-
-    <footer class="bg-[#FFF6D9] py-6 border-t border-gray-200">
-        <div class="container mx-auto px-5">
-            <div class="flex flex-wrap items-center justify-between gap-6">
-
-                
-                <div class="flex items-center gap-2 shrink-0">
-                    <img src="./general/logo.oxiri.svg" alt="logo" class="w-10 h-10">
+     <section>
+        <div class="container max-w-[1440px] mt-[0px] mb-[0px] ml-auto mr-auto pt-[60px] pb-[60px]">
+            <div class="wrapper">
+                <h1 class="md:text-left ml-[110px] text-[36px] font-bold">Специальные предложения</h1>
+                <div class="flex justify-center flex-wrap gap-[50px] mt-[50px]">
+                    <div>
+                        <div
+                            class="flex items-center justify-evenly w-[584px] h-[200px] bg-[#FCD5BA] rounded-sm duration-700 ease-in-out hover:shadow-xl hover:shadow-[#CA936080]">
+                            <div class="left w-[258px]">
+                                <p class="font-bold text-[24px] text-[#414141]">Оформите карту «Северяночка»</p>
+                                <p class="font-normal text-[16px] text-[#414141]">И получайте бонусы при покупке в
+                                    магазинах и на сайте</p>
+                            </div>
+                            <img class="w-[250px]" src="./general/sovun.svg" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <div
+                            class="flex items-center justify-evenly w-[584px] h-[200px] bg-[#E5FFDE] rounded-sm duration-700 ease-in-out hover:shadow-xl hover:shadow-[#CA936080]">
+                            <div class="left w-[258px]">
+                                <p class="font-bold text-[24px] text-[#414141]">Покупайте акционные товары</p>
+                                <p class="font-normal text-[16px] text-[#414141]">И получайте вдвое больше бонусов</p>
+                            </div>
+                            <img class="w-[190px] h-[186px]" src="./general/savat.svg" alt="">
+                        </div>
+                    </div>
                 </div>
+            </div>
+        </div>
+    </section>
+     <section class="container mx-auto max-w-[1200px] mt-[0px] mb-[0px] ml-auto mr-auto pt-[60px] pb-[60px]">
+            <h1 class="text-[36px] text-[#414141] font-bold pb-[30px]">Наши магазины</h1>
+            <div>
 
-               
-                <ul class="flex flex-wrap justify-center items-center gap-4 text-gray-700 text-sm font-medium">
-                    <li><a href="/" class="hover:text-[#70C05B]">O компании</a></li>
-                    <li><a href="/" class="hover:text-[#70C05B]">Контакты</a></li>
-                    <li><a href="/" class="hover:text-[#70C05B]">Вакансии</a></li>
-                    <li><a href="/" class="hover:text-[#70C05B]">Статьи</a></li>
-                    <li><a href="/" class="hover:text-[#70C05B]">Политика обработки персональных данных</a></li>
+                <ul class=" grid  grid-cols-3 sm:grid-cols-4  max-w-[500px] w-full gap-[20px] pb-[30px]">
+                    <li
+                        class="rounded-[5px] cursor-pointer hover:bg-[#70C05B]  max-w-[100px] w-full h-[40px] text-center p-[4px]">
+                        <a href="">п.Щельяюр</a>
+                    </li>
+                    <li
+                        class="rounded-[5px] cursor-pointer hover:bg-[#70C05B]  max-w-[100px] w-full h-[40px] text-center p-[4px]">
+                        <a href="">д.Вертеп</a>
+                    </li>
+                    <li
+                        class="rounded-[5px] cursor-pointer hover:bg-[#70C05B]  max-w-[100px] w-full h-[40px] text-center p-[4px]">
+                        <a href="">c.Краснобор</a>
+                    </li>
+                    <li
+                        class="rounded-[5px] cursor-pointer hover:bg-[#70C05B]  max-w-[100px] w-full h-[40px] text-center p-[4px]">
+                        <a href="">д.Диюр</a>
+                    </li>
                 </ul>
+                <section class="w-full h-[400px] mx-auto ml-auto mr-auto rounded-xl overflow-hidden">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2994.5122180284464!2d69.24007351542293!3d41.29949527927269!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8bdf9edfd45f%3A0x1ee4b1ef12a9cf5e!2sTashkent!5e0!3m2!1sen!2suz!4v1700000000000"
+                        class="w-full h-full px-[10px] border-0" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </section>
+            </div>
+        </section>
+         <section>
+            <div class="container mx-auto max-w-[1200px] flex justify-between items-center px-[6px]  pt-[60px]">
+                <p class="text-[36px] font-bold ">Статьи</p>
+                <p>Bce статьи</p>
+            </div>
+        </section>
+        <section>
+            <div class="container mx-auto max-w-[1200px] pb-[100px] pt-[20px] ">
 
-
-                <ul class="flex flex-wrap items-center justify-center gap-3 text-gray-700">
+                <div class="grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-3 gap-8 px-[6px]">
+                    
+                        <div class="max-w-[380px]">
+                            <img src="./general/odam maska.svg" alt="art">
+                            <p class="pt-[6px]">05.03.2021</p>
+                            <p class="font-bold py-[10px]">Режим использования масок и перчаток на территории магазинов</p>
+                            <p>Подробная информация o режимах использования масок и перчаток на 
+                            территории магазинов "ЛЕНТА". Информация обновляется каждый будний день.</p>
+                            <div class="py-[20px]">
+                                <button class="bg-white text-green-600 font-semibold max-w-full sm:w-[150px] h-[40px] rounded-xl border border-green-600 shadow-md hover:bg-green-600 hover:text-white hover:shadow-lg transition duration-300 ">
+                                    Подробнее
+                                </button>
+                            </div>
+                        </div>
+                        <div class="max-w-[380px]">
+                            <img src="./general/daraxt gul.svg" alt="art">
+                            <p class="pt-[6px]">05.03.2021</p>
+                            <p class="font-bold py-[10px]">Режим использования масок и перчаток на территории магазинов</p>
+                            <p>Подробная информация o режимах использования масок и перчаток на 
+                            территории магазинов "ЛЕНТА". Информация обновляется каждый будний день.</p>
+                            <div class="py-[20px]">
+                                <button class="bg-white text-green-600 font-semibold max-w-full sm:w-[150px] h-[40px] rounded-xl border border-green-600 shadow-md hover:bg-green-600 hover:text-white hover:shadow-lg transition duration-300 ">
+                                    Подробнее
+                                </button>
+                            </div>
+                        </div>
+                        <div class="max-w-[380px]">
+                            <img src="./general/meva.svg" alt="art">
+                            <p class="pt-[6px]">05.03.2021</p>
+                            <p class="font-bold py-[10px]">Режим использования масок и перчаток на территории магазинов</p>
+                            <p>Подробная информация o режимах использования масок и перчаток на 
+                            территории магазинов "ЛЕНТА". Информация обновляется каждый будний день.</p>
+                            <div class="py-[20px]">
+                                <button class="bg-white text-green-600 font-semibold max-w-full sm:w-[150px] h-[40px] rounded-xl border border-green-600 shadow-md hover:bg-green-600 hover:text-white hover:shadow-lg transition duration-300 ">
+                                    Подробнее
+                                </button>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </section>
+    <foter class=" mt-[10px] bg-[#F9F4E2] h-[156px]">
+        <div class="container max-w-[1440px] mt-[0px] mb-[0px] ml-auto mr-auto ">
+            <div class="wrapper flex justify-evenly items-center flex-wrap">
+                <div class="flex items-center gap-[40px]">
+                    <img src="./general/logo.oxiri.svg" alt="">
+                    <ul class="flex gap-[30px] items-center text-[12px] text-[#414141] font-normal">
+                        <li>
+                            <a href="">O компании</a>
+                        </li>
+                        <li>
+                            <a href="">Контакты</a>
+                        </li>
+                        <li>
+                            <a href="">Вакансии</a>
+                        </li>
+                        <li>
+                            <a href="">Статьи</a>
+                        </li>
+                        <li>
+                            <a href="">Политика обработки персональных данных</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="flex gap-[20px]">
+                        <ul class="flex flex-wrap items-center justify-center gap-3 text-gray-700">
                     <li>
                         <a href="https://www.instagram.com/elbek19_/" target="_blank">
                             <img src="./general/instagram.svg" alt="instagram" class="w-5 h-5">
@@ -92,22 +220,26 @@
                         <a href="/"><img src="./general/facebook.svg" alt="facebook" class="w-5 h-5"></a>
                     </li>
                     <li><a href="/"><img src="./general/ok.svg" alt="ok" class="w-5 h-5"></a></li>
-                    <li class="flex items-center gap-2">
-                        <img src="./general/phone.svg" alt="phone" class="w-5 h-5">
-                        <a href="tel:+998935444770" class="text-sm hover:text-[#70C05B]">+998 93 544 47 70</a>
-                    </li>
                 </ul>
-            </div>
+                    </div>
+                </div>
+                <div class="flex flex-col mt-[20px] gap-[20px]">
+                    <div class="flex items-center gap-[10px]">
+                        <img src="./general/phone.svg" alt="phone">
+                        <a href="tel:+998935444770" class="text-[#414141] text-sm hover:text-[#70C05B] text-[16px] font-bold">+99893 544 47 70</a>
 
-            
-            <div class="flex flex-wrap items-center justify-end gap-2 mt-4">
-                <p class="text-xs text-gray-500">Дизайн</p>
-                <img src="./general/logo-zasovskiy-small-black.svg" alt="zasovskiy logo" class="h-4">
+                    </div>
+                    <div class="flex flex-wrap items-center justify-end gap-2 pb-[20px] mt-4 font-bold">
+                        <p class="text-xs text-gray-500 text-[16px]">Дизайн</p>
+                        <img src="./general/logo-zasovskiy-small-black.svg" alt="">
+                    </div>
+                </div>
             </div>
         </div>
-    </footer>
+    </foter>
 
     <script src="./products-data/products-data.js"></script>
+    <script src="./js/search.js"></script>
     <script src="./js/main.js"></script>
 </body>
 
